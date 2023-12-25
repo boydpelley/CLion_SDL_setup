@@ -1,0 +1,3 @@
+C:/Users/boydj/git/personal/sdl_test3/cmake-build-debug/CMakeFiles/sdl_test3.dir
+C:/Users/boydj/git/personal/sdl_test3/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/boydj/git/personal/sdl_test3/cmake-build-debug/CMakeFiles/rebuild_cache.dir

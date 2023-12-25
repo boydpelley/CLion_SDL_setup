@@ -1,0 +1,58 @@
+The system is: Windows - 10.0.22621 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/gcc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+
+The C compiler identification is GNU, found in "C:/Users/boydj/git/personal/sdl_test3/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/a.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/Users/boydj/git/personal/sdl_test3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.2.4/bin/ninja/win/ninja.exe cmTC_9d290 && [1/2] Building C object CMakeFiles/cmTC_9d290.dir/testCCompiler.c.obj
+[2/2] Linking C executable cmTC_9d290.exe
+
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: C:/Users/boydj/git/personal/sdl_test3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.2.4/bin/ninja/win/ninja.exe cmTC_43f58 && [1/2] Building C object CMakeFiles/cmTC_43f58.dir/CheckIncludeFile.c.obj
+[2/2] Linking C executable cmTC_43f58.exe
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: C:/Users/boydj/git/personal/sdl_test3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.2.4/bin/ninja/win/ninja.exe cmTC_fb2c3 && [1/2] Building C object CMakeFiles/cmTC_fb2c3.dir/src.c.obj
+[2/2] Linking C executable cmTC_fb2c3.exe
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
